@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&family=Libre+Baskerville&family=Montserrat:wght@100&display=swap');
+
+body {
+font-family: 'Caveat', cursive;
+
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-colors {
+    text-align: center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+
+}
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top:15%;
+}
+@keyframes changecolor{
+    0%{
+        color: darkmagenta;
+    }
+    20%{
+        color: lightskyblue;
+    }
+    40%{
+        color: gold;
+    }
+    60%{
+        color: green;
+    }
+    80%{
+        color: orangered;
+    }
+}
+@media(max-width:480px) {
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+
+}
